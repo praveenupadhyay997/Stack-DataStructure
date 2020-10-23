@@ -65,19 +65,24 @@ namespace StackAndQueueImplementation
                 }
             }
         }
-        public void Dequeue()
+        /// <summary>
+        /// UC4- Implementing the functionality of Dequque for the Queue Operations
+        /// </summary>
+        /// <returns></returns>
+        public int Dequeue()
         {
             // Checking the end Condition of the queue, if empty then return NULL.  
             if (this.head == null)
             {
                 Console.WriteLine("The Queue is empty");
-                return;
+                return 0;
             }
             // Shorting the head of the node using a temporary Node
             // Storing the head pointer to the next node pointer
             Node temp = this.head;
             this.head = this.head.next;
             Console.WriteLine("\nElement to be deleted from the queue = {0}", temp.value);
+            return temp.value;
         }
     }
 }
