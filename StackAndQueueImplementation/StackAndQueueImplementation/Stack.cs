@@ -57,16 +57,17 @@ namespace StackAndQueueImplementation
         /// <summary>
         /// UC2- Peek from the top of the stack and displaying the element
         /// </summary>
-        public void Peek()
+        public int Peek()
         {
             //Returning the end condition when Stack is empty
             if(this.top == null)
             {
                 Console.WriteLine("Stack is Empty....");
-                return;
+                return 0;
             }
             //Displaying the value in the top of the stack
             Console.WriteLine("\nValue in the top of the stack is = "+this.top.value);
+            return this.top.value;
         }
         /// <summary>
         /// Popping from the Stack till the stack is empty
