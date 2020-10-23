@@ -34,6 +34,10 @@ namespace StackAndQueueImplementation
             newQueue.Enqueue(70);
             //Displaying the Queue
             newQueue.Display();
+            //Dequeue operation from the Queue
+            newQueue.Dequeue();
+            //Displaying the Queue
+            newQueue.Display();
         }
     }
 }

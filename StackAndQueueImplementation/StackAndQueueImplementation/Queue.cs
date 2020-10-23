@@ -65,5 +65,19 @@ namespace StackAndQueueImplementation
                 }
             }
         }
+        public void Dequeue()
+        {
+            // Checking the end Condition of the queue, if empty then return NULL.  
+            if (this.head == null)
+            {
+                Console.WriteLine("The Queue is empty");
+                return;
+            }
+            // Shorting the head of the node using a temporary Node
+            // Storing the head pointer to the next node pointer
+            Node temp = this.head;
+            this.head = this.head.next;
+            Console.WriteLine("\nElement to be deleted from the queue = {0}", temp.value);
+        }
     }
 }
