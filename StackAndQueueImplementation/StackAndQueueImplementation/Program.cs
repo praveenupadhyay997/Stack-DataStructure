@@ -16,6 +16,8 @@ namespace StackAndQueueImplementation
             newStack.Push(56);
             //Displaying the stack
             newStack.Display();
+            //Peek and Pop from the Stack till the Stack is Empty
+            newStack.IsEmpty();
         }
     }
 }
