@@ -1,9 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="Node.cs" company="Bridgelabz">
+//   Copyright © 2018 Company
+// </copyright>
+// <creator Name="Praveen Kumar Upadhyay"/>
+// --------------------------------------------------------------------------------------------------------------------
 namespace StackAndQueueImplementation
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
     /// <summary>
     /// Defining the most basic unit of the data structure
     /// </summary>
